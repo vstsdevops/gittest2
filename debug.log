@@ -1,0 +1,368 @@
+trace: built-in: git 'push'
+trace: run_command: 'git-remote-https' 'origin' 'https://FIJUVOL@tfs1.de.abb.com/tfs/FIDRI/FI%20GIT/_git/UNICOS_Applications_arpap'
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+* Couldn't find host tfs1.de.abb.com in the _netrc file; using defaults
+*   Trying 10.51.34.155...
+* Connected to tfs1.de.abb.com (10.51.34.155) port 443 (#0)
+* successfully set certificate verify locations:
+*   CAfile: C:\User\Git/bin/curl-ca-bundle.crt
+  CApath: C:\User\Git\certificates
+* SSL connection using TLSv1.0 / AES128-SHA
+* Server certificate:
+* 	 subject: C=CH; L=Baden; O=ABB Information Systems Ltd.; CN=DE-S-0217227.de.abb.com
+* 	 start date: 2016-12-20 11:48:37 GMT
+* 	 expire date: 2019-06-20 11:58:37 GMT
+* 	 issuer: DC=COM; DC=ABB; O=ABB; CN=ABB Issuing CA 3
+* 	 SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+> GET /tfs/FIDRI/FI%20GIT/_git/UNICOS_Applications_arpap/info/refs?service=git-receive-pack HTTP/1.1
+User-Agent: git/1.9.5.msysgit.1
+Host: tfs1.de.abb.com
+Accept: */*
+Accept-Encoding: gzip
+Pragma: no-cache
+
+< HTTP/1.1 401 Unauthorized
+< Content-Type: text/html
+< Server: Microsoft-IIS/7.5
+< X-TFS-ProcessId: 8bb7eb07-12c3-4073-a4e4-3e0ba6fdc249
+< Access-Control-Allow-Origin: *
+< Access-Control-Max-Age: 3600
+< Access-Control-Allow-Methods: OPTIONS,GET,POST,PATCH,PUT,DELETE
+< Access-Control-Expose-Headers: ActivityId,X-TFS-Session,X-MS-ContinuationToken
+< Access-Control-Allow-Headers: authorization
+< X-FRAME-OPTIONS: SAMEORIGIN
+< Set-Cookie: Tfs-SessionId=b5a216fc-1c7f-41c6-94d9-1a6926deef84; path=/; secure
+< Set-Cookie: Tfs-SessionActive=2017-01-10 13:47:32Z; path=/; secure
+< WWW-Authenticate: Negotiate
+< WWW-Authenticate: NTLM
+< X-Powered-By: ASP.NET
+< P3P: CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+< X-Content-Type-Options: nosniff
+< Date: Tue, 10 Jan 2017 13:47:31 GMT
+< Content-Length: 1293
+< 
+* Ignoring the response-body
+* Connection #0 to host tfs1.de.abb.com left intact
+* Issue another request to this URL: 'https://FIJUVOL@tfs1.de.abb.com/tfs/FIDRI/FI%20GIT/_git/UNICOS_Applications_arpap/info/refs?service=git-receive-pack'
+* Couldn't find host tfs1.de.abb.com in the _netrc file; using defaults
+* Found bundle for host tfs1.de.abb.com: 0x22ca6d8
+* Re-using existing connection! (#0) with host tfs1.de.abb.com
+* Connected to tfs1.de.abb.com (10.51.34.155) port 443 (#0)
+> GET /tfs/FIDRI/FI%20GIT/_git/UNICOS_Applications_arpap/info/refs?service=git-receive-pack HTTP/1.1
+User-Agent: git/1.9.5.msysgit.1
+Host: tfs1.de.abb.com
+Accept: */*
+Accept-Encoding: gzip
+Pragma: no-cache
+
+< HTTP/1.1 401 Unauthorized
+< Content-Type: text/html
+< Server: Microsoft-IIS/7.5
+< X-TFS-ProcessId: 8bb7eb07-12c3-4073-a4e4-3e0ba6fdc249
+< Access-Control-Allow-Origin: *
+< Access-Control-Max-Age: 3600
+< Access-Control-Allow-Methods: OPTIONS,GET,POST,PATCH,PUT,DELETE
+< Access-Control-Expose-Headers: ActivityId,X-TFS-Session,X-MS-ContinuationToken
+< Access-Control-Allow-Headers: authorization
+< X-FRAME-OPTIONS: SAMEORIGIN
+< Set-Cookie: Tfs-SessionId=54f84baf-5260-4dc0-90d9-28fba96068b0; path=/; secure
+< Set-Cookie: Tfs-SessionActive=2017-01-10 13:47:32Z; path=/; secure
+< WWW-Authenticate: Negotiate
+< WWW-Authenticate: NTLM
+< X-Powered-By: ASP.NET
+< P3P: CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+< X-Content-Type-Options: nosniff
+< Date: Tue, 10 Jan 2017 13:47:31 GMT
+< Content-Length: 1293
+< 
+* Ignoring the response-body
+* Connection #0 to host tfs1.de.abb.com left intact
+* Issue another request to this URL: 'https://FIJUVOL@tfs1.de.abb.com/tfs/FIDRI/FI%20GIT/_git/UNICOS_Applications_arpap/info/refs?service=git-receive-pack'
+* Couldn't find host tfs1.de.abb.com in the _netrc file; using defaults
+* Found bundle for host tfs1.de.abb.com: 0x22ca6d8
+* Re-using existing connection! (#0) with host tfs1.de.abb.com
+* Connected to tfs1.de.abb.com (10.51.34.155) port 443 (#0)
+* Server auth using Negotiate with user 'FIJUVOL'
+> GET /tfs/FIDRI/FI%20GIT/_git/UNICOS_Applications_arpap/info/refs?service=git-receive-pack HTTP/1.1
+Authorization: Negotiate TlRMTVNTUAABAAAAt4II4gAAAAAAAAAAAAAAAAAAAAAGAbEdAAAADtrace: run_command: 'git credential-manager get'
+w==
+User-Agent: git/1.9.5.msysgit.1
+Host: tfs1.de.abb.com
+Accept: */*
+Accept-Encoding: gzip
+Pragma: no-cache
+
+< HTTP/1.1 401 Unauthorized
+< Content-Type: text/html; charset=us-ascii
+< Server: Microsoft-HTTPAPI/2.0
+< WWW-Authenticate: Negotiate TlRMTVNTUAACAAAADAAMADgAAAA1goni4CiNIuiC8w0AAAAAAAAAAKAAoABEAAAABgGxHQAAAA9FAFUAUgBPAFAARQACAAwARQBVAFIATwBQAEUAAQAYAEQARQAtAFMALQAwADIAMQA3ADIAMgA3AAQAHABlAHUAcgBvAHAAZQAuAGEAYgBiAC4AYwBvAG0AAwAuAGQAZQAtAHMALQAwADIAMQA3ADIAMgA3AC4AZABlAC4AYQBiAGIALgBjAG8AbQAFAA4AYQBiAGIALgBjAG8AbQAHAAgA4WxaF0hr0gEAAAAA
+< Date: Tue, 10 Jan 2017 13:47:31 GMT
+< Content-Length: 341
+< 
+* Ignoring the response-body
+* Connection #0 to host tfs1.de.abb.com left intact
+* Issue another request to this URL: 'https://FIJUVOL@tfs1.de.abb.com/tfs/FIDRI/FI%20GIT/_git/UNICOS_Applications_arpap/info/refs?service=git-receive-pack'
+* Couldn't find host tfs1.de.abb.com in the _netrc file; using defaults
+* Found bundle for host tfs1.de.abb.com: 0x22ca6d8
+* Re-using existing connection! (#0) with host tfs1.de.abb.com
+* Connected to tfs1.de.abb.com (10.51.34.155) port 443 (#0)
+* Server auth using Negotiate with user 'FIJUVOL'
+> GET /tfs/FIDRI/FI%20GIT/_git/UNICOS_Applications_arpap/info/refs?service=git-receive-pack HTTP/1.1
+Authorization: Negotiate TlRMTVNTUAADAAAAGAAYAH4AAABQAVABlgAAAAAAAABYAAAADgAOAFgAAAAYABgAZgAAABAAEADmAQAANYKI4gYBsR0AAAAPPvA+o0PMQwJY9akDfk9uQEYASQBKAFUAVgBPAEwARgBJAC0ATAAtADcAMAAwADQANwA3ADkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA7sXiyAACsefo/DBdLe43kwEBAAAAAAAA4WxaF0hr0gHyFpwkvq555QAAAAACAAwARQBVAFIATwBQAEUAAQAYAEQARQAtAFMALQAwADIAMQA3ADIAMgA3AAQAHABlAHUAcgBvAHAAZQAuAGEAYgBiAC4AYwBvAG0AAwAuAGQAZQAtAHMALQAwADIAMQA3ADIAMgA3AC4AZABlAC4AYQBiAGIALgBjAG8AbQAFAA4AYQBiAGIALgBjAG8AbQAHAAgA4WxaF0hr0gEGAAQAAgAAAAgAMAAwAAAAAAAAAAEAAAAAIAAAarHeeiNhk1erxTjx5dRNOJjq1rNKzrWLy+QMqH3rh48KABAAAAAAAAAAAAAAAAAAAAAAAAkAKABIAFQAVABQAC8AdABmAHMAMQAuAGQAZQAuAGEAYgBiAC4AYwBvAG0AAAAAAAAAAAAAAAAA7U4cM/9alaFUq3040msGTw==
+User-Agent: git/1.9.5.msysgit.1
+Host: tfs1.de.abb.com
+Accept: */*
+Accept-Encoding: gzip
+Pragma: no-cache
+
+< HTTP/1.1 401 Unauthorized
+< Content-Type: text/html
+< Server: Microsoft-IIS/7.5
+< X-TFS-ProcessId: 8bb7eb07-12c3-4073-a4e4-3e0ba6fdc249
+< Access-Control-Allow-Origin: *
+< Access-Control-Max-Age: 3600
+< Access-Control-Allow-Methods: OPTIONS,GET,POST,PATCH,PUT,DELETE
+< Access-Control-Expose-Headers: ActivityId,X-TFS-Session,X-MS-ContinuationToken
+< Access-Control-Allow-Headers: authorization
+< X-FRAME-OPTIONS: SAMEORIGIN
+< Set-Cookie: Tfs-SessionId=bfa76ec9-598b-44db-86a6-0c4259828115; path=/; secure
+< Set-Cookie: Tfs-SessionActive=2017-01-10 13:47:32Z; path=/; secure
+< WWW-Authenticate: Negotiate
+< WWW-Authenticate: NTLM
+< X-Powered-By: ASP.NET
+< P3P: CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+< X-Content-Type-Options: nosniff
+< Date: Tue, 10 Jan 2017 13:47:31 GMT
+< Content-Length: 1293
+< 
+* Connection #0 to host tfs1.de.abb.com left intact
+trace: exec: 'git-credential-manager' 'get'
+trace: run_command: 'git-credential-manager' 'get'
+* Couldn't find host tfs1.de.abb.com in the _netrc file; using defaults
+* Found bundle for host tfs1.de.abb.com: 0x22ca6d8
+* Hostname tfs1.de.abb.com was found in DNS cache
+*   Trying 10.51.34.155...
+* Connected to tfs1.de.abb.com (10.51.34.155) port 443 (#1)
+* successfully set certificate verify locations:
+*   CAfile: C:\User\Git/bin/curl-ca-bundle.crt
+  CApath: C:\User\Git\certificates
+* SSL re-using session ID
+* SSL connection using TLSv1.0 / AES128-SHA
+* Server certificate:
+* 	 subject: C=CH; L=Baden; O=ABB Information Systems Ltd.; CN=DE-S-0217227.de.abb.com
+* 	 start date: 2016-12-20 11:48:37 GMT
+* 	 expire date: 2019-06-20 11:58:37 GMT
+* 	 issuer: DC=COM; DC=ABB; O=ABB; CN=ABB Issuing CA 3
+* 	 SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+> GET /tfs/FIDRI/FI%20GIT/_git/UNICOS_Applications_arpap/info/refs?service=git-receive-pack HTTP/1.1
+User-Agent: git/1.9.5.msysgit.1
+Host: tfs1.de.abb.com
+Accept: */*
+Accept-Encoding: gzip
+Pragma: no-cache
+
+< HTTP/1.1 401 Unauthorized
+< Content-Type: text/html
+< Server: Microsoft-IIS/7.5
+< X-TFS-ProcessId: 8bb7eb07-12c3-4073-a4e4-3e0ba6fdc249
+< Access-Control-Allow-Origin: *
+< Access-Control-Max-Age: 3600
+< Access-Control-Allow-Methods: OPTIONS,GET,POST,PATCH,PUT,DELETE
+< Access-Control-Expose-Headers: ActivityId,X-TFS-Session,X-MS-ContinuationToken
+< Access-Control-Allow-Headers: authorization
+< X-FRAME-OPTIONS: SAMEORIGIN
+< Set-Cookie: Tfs-SessionId=b08ada9a-4cb4-42f6-a15a-4ead583011eb; path=/; secure
+< Set-Cookie: Tfs-SessionActive=2017-01-10 13:47:32Z; path=/; secure
+< WWW-Authenticate: Negotiate
+< WWW-Authenticate: NTLM
+< X-Powered-By: ASP.NET
+< P3P: CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+< X-Content-Type-Options: nosniff
+< Date: Tue, 10 Jan 2017 13:47:32 GMT
+< Content-Length: 1293
+< 
+* Ignoring the response-body
+* Connection #1 to host tfs1.de.abb.com left intact
+* Issue another request to this URL: 'https://FIJUVOL@tfs1.de.abb.com/tfs/FIDRI/FI%20GIT/_git/UNICOS_Applications_arpap/info/refs?service=git-receive-pack'
+* Couldn't find host tfs1.de.abb.com in the _netrc file; using defaults
+* Found bundle for host tfs1.de.abb.com: 0x22ca6d8
+* Re-using existing connection! (#1) with host tfs1.de.abb.com
+* Connected to tfs1.de.abb.com (10.51.34.155) port 443 (#1)
+* Server auth using Negotiate with user 'juri.voloshkin@fi.abb.com'
+> GET /tfs/FIDRI/FI%20GIT/_git/UNICOS_Applications_arpap/info/refs?service=git-receive-pack HTTP/1.1
+Authorization: Negotiate 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: run_command: 'git credential-manager store'
+HX2TUEkqt0/W1rboYFL+iF+Sg/dTWKF9N0Loi2UnUQR6SQ+vbS1gwrtLIf3EHPuFgLm+o7bxpxvdWYM8pJxniERCU0fVnT/aYw8EU/QFVVxiN1ShK2TxidSSPjVXVAqCtEiOVlk0vy00KSZPPHO1rMf4o2PBhbRgvhqbgfAr7xeShDolx7BFdwNS+1nCX5SqZKV+DTe1VWyWCIP2wIwnFoBRxl55KA7YC2AcMKJUSL9V+kbp88yPTKiOaacWKZTqNNJ5Wxlca6RD2LIb5TY4CG3bBy8G39R5q6hD3SB7PO4JuY2SkJdbvxEdc3RJc6I69lLfHaRLYOIytEyimg3ePSidGIjUKhInKkO4YVtQ8puVwgz+PSCXYdedQwGgDz0G4NtU4GeBDcx+zxYecFAScpgOW0xA3HKeplXetdlJay6s8xGimHe6gVoGNA1U8b/qQ3njIcTAjdWELWsNP215chvIQhaS/iLQkQM+dlPxkeaep6Kq5ij6OWTktgV9bZu8YamGG/FuQEvZwU7QpQQC5WvR8lzA2swRJ1yDiFYUdhYs1KfsyoPeD4UDsXY/Sq/Exro54kNGcm2b1Osv2RbHXbJirb8HCWCqJzD3dTexm5U7mQvB1xN4LZIiBazVYHOhg0Hwwuah6WB76Mrq9CawjVL6T2vdN1i8Rsb/WxXM4eO0syp4m/8+P3c5y3wP0MSNVm0EA6qzm1qw5h7oNjdGlJknaeVFOuvCGK9Z37MPfbNESnIBi0Q//vtBribYyHFnaHmqgpN+rkaKDqxuSpJ3xRf7NauE8dhpqE7c2rA3k1Yd4R9I0lB/hsN84g4luI5qqNKnUv6etRt1qQJ3vjsdBtHwqlJX+ipf49c9eNtsZ2wNYMBFOv6F4yJy1Py3lQbBTQd9ScXV5pRf2euIeZu0uRbikeOaIhneSXZydGHM+mmzFJIZnOfWFU2CYexx6w303PX139gO9wLjRKA3dDi62F7M97e46DWe/1GpHM+GdVFhRXguqrNHIjR61ZVAeIebkbkWibxThWgH+HF0Epnrl/dzqBQ/wHIW9rEZdPtCA//lNmdjJm7sb6b3Sbk2i2AR9PyftPe9CvZwwBKlqJofye+AHRBiNL+jTNGy6KxvL0De5CF3nvNFKFBGPYBbWyfWgOr6SB8TCB7qADAgESooHmBIHjN8Bm/CyJZdz3s5MJCTutYLac3j0s0HdOlVmO0KAno9zgt0Zui3UT7mtbVLhdUJgvdvleOQ7fMfDmLEQZCPlVsM4trkQzMjdlQBzuA+eKRbQEl2U1FrLq1UHhNpgYVyYWT+Myu2EbAkD+/jqDi4Jamoj5ILMd2KCc6pnm6Zza5qe+cDCXJf0MC4d+TjhszZuEYY5myxjVMtPKYpHPGPhtfwYTB1oUDa1NrBq7aVzaBS+8RSlkEa6NDnJ9akqC3j9Wat3VqASn0s+YR4hl3nwiQ4JE2viUrdPabOAp4RJPTkawZ7I=
+User-Agent: git/1.9.5.msysgit.1
+Host: tfs1.de.abb.com
+Accept: */*
+Accept-Encoding: gzip
+Pragma: no-cache
+
+< HTTP/1.1 200 OK
+< Cache-Control: private
+< Content-Type: application/x-git-receive-pack-advertisement
+< Server: Microsoft-IIS/7.5
+< X-TFS-ProcessId: 8bb7eb07-12c3-4073-a4e4-3e0ba6fdc249
+< Access-Control-Allow-Origin: *
+< Access-Control-Max-Age: 3600
+< Access-Control-Allow-Methods: OPTIONS,GET,POST,PATCH,PUT,DELETE
+< Access-Control-Expose-Headers: ActivityId,X-TFS-Session,X-MS-ContinuationToken
+< Access-Control-Allow-Headers: authorization
+< X-FRAME-OPTIONS: SAMEORIGIN
+< Set-Cookie: Tfs-SessionId=85943e1b-9290-444d-a04b-323ae39c19cf; path=/; secure
+< Set-Cookie: Tfs-SessionActive=2017-01-10 13:47:33Z; path=/; secure
+< X-VSS-UserData: f8d090bf-e8cb-4ed6-8f0c-a75779713e63:FIJUVOL
+< X-AspNet-Version: 4.0.30319
+< Persistent-Auth: false
+< X-Powered-By: ASP.NET
+< P3P: CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+< X-Content-Type-Options: nosniff
+< WWW-Authenticate: Negotiate oYG2MIGzoAMKAQChCwYJKoZIgvcSAQICooGeBIGbYIGYBgkqhkiG9xIBAgICAG+BiDCBhaADAgEFoQMCAQ+ieTB3oAMCARKicARusXNDr1D0bR7s3b9x0x0qU3bevXtkQQPyoBWiOSBdYAXg3AJSe9FD05HjbuW+xYe9m6IIXFu5jBqKsxSpaF9L7ZERF6/9QbvHTdX5rDQENNzQ0lKUp9ig9EY6qVI1zS5FMMHldQSJ1mvMtgdHY0E=
+< Date: Tue, 10 Jan 2017 13:47:32 GMT
+< Content-Length: 566
+< 
+* Connection #1 to host tfs1.de.abb.com left intact
+trace: exec: 'git-credential-manager' 'store'
+trace: run_command: 'git-credential-manager' 'store'
+trace: run_command: 'send-pack' '--stateless-rpc' '--helper-status' '--thin' '--no-progress' 'https://FIJUVOL@tfs1.de.abb.com/tfs/FIDRI/FI%20GIT/_git/UNICOS_Applications_arpap/' 'refs/heads/master:refs/heads/master'
+trace: built-in: git 'send-pack' '--stateless-rpc' '--helper-status' '--thin' '--no-progress' 'https://FIJUVOL@tfs1.de.abb.com/tfs/FIDRI/FI%20GIT/_git/UNICOS_Applications_arpap/' 'refs/heads/master:refs/heads/master'
+trace: run_command: 'pack-objects' '--all-progress-implied' '--revs' '--stdout' '--thin' '-q'
+trace: built-in: git 'pack-objects' '--all-progress-implied' '--revs' '--stdout' '--thin' '-q'
+* Couldn't find host tfs1.de.abb.com in the _netrc file; using defaults
+*   Trying 10.51.34.155...
+* Connected to tfs1.de.abb.com (10.51.34.155) port 443 (#0)
+* successfully set certificate verify locations:
+*   CAfile: C:\User\Git/bin/curl-ca-bundle.crt
+  CApath: C:\User\Git\certificates
+* SSL re-using session ID
+* SSL connection using TLSv1.0 / AES128-SHA
+* Server certificate:
+* 	 subject: C=CH; L=Baden; O=ABB Information Systems Ltd.; CN=DE-S-0217227.de.abb.com
+* 	 start date: 2016-12-20 11:48:37 GMT
+* 	 expire date: 2019-06-20 11:58:37 GMT
+* 	 issuer: DC=COM; DC=ABB; O=ABB; CN=ABB Issuing CA 3
+* 	 SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+> POST /tfs/FIDRI/FI%20GIT/_git/UNICOS_Applications_arpap/git-receive-pack HTTP/1.1
+User-Agent: git/1.9.5.msysgit.1
+Host: tfs1.de.abb.com
+Accept-Encoding: gzip
+Content-Type: application/x-git-receive-pack-request
+Accept: application/x-git-receive-pack-result
+Content-Length: 10507259
+
+< HTTP/1.1 401 Unauthorized
+< Content-Type: text/html
+< Server: Microsoft-IIS/7.5
+< X-TFS-ProcessId: 8bb7eb07-12c3-4073-a4e4-3e0ba6fdc249
+< Access-Control-Allow-Origin: *
+< Access-Control-Max-Age: 3600
+< Access-Control-Allow-Methods: OPTIONS,GET,POST,PATCH,PUT,DELETE
+< Access-Control-Expose-Headers: ActivityId,X-TFS-Session,X-MS-ContinuationToken
+< Access-Control-Allow-Headers: authorization
+< X-FRAME-OPTIONS: SAMEORIGIN
+< Set-Cookie: Tfs-SessionId=9b6060bf-a6b5-4f46-bf4d-029922ae715e; path=/; secure
+< Set-Cookie: Tfs-SessionActive=2017-01-10 13:47:36Z; path=/; secure
+< WWW-Authenticate: Negotiate
+< WWW-Authenticate: NTLM
+< X-Powered-By: ASP.NET
+< P3P: CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+< X-Content-Type-Options: nosniff
+< Date: Tue, 10 Jan 2017 13:47:35 GMT
+< Content-Length: 1293
+* Rewind stream after send
+* Keep sending data to get tossed away!
+< 
+* Ignoring the response-body
+* Connection #0 to host tfs1.de.abb.com left intact
+* Issue another request to this URL: 'https://FIJUVOL@tfs1.de.abb.com/tfs/FIDRI/FI%20GIT/_git/UNICOS_Applications_arpap/git-receive-pack'
+* Couldn't find host tfs1.de.abb.com in the _netrc file; using defaults
+* Found bundle for host tfs1.de.abb.com: 0x3547ff8
+* Re-using existing connection! (#0) with host tfs1.de.abb.com
+* Connected to tfs1.de.abb.com (10.51.34.155) port 443 (#0)
+* Server auth using Negotiate with user 'juri.voloshkin@fi.abb.com'
+> POST /tfs/FIDRI/FI%20GIT/_git/UNICOS_Applications_arpap/git-receive-pack HTTP/1.1
+Authorization: Negotiate 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: run_command: 'git credential-manager erase'
+RWth5KZIJ8dKVRmUY8YhkO6NtRZKz+CWKG8oLbPVai7vMOHuoFHjutl7PJAWKqhYm603daYwylYmHC9I2HNZFDnyEsDqMoj/c8J0Om9FAGuDO1VvnmCniCYKVtCxsYO+eFkKaYiIFTu/4mntRwwZJdDI9dWs7dR6fHER3qnVS6tfYTtOSFOmxtnKPwtZZpFBZlXVqWE8bOneLZGMUyfeRVQjRT1QA1PW+O4lE00/8TMvbFiGnJA+7RAUckgpi0q6iwQ5BQpm7LkZu9+bc/EvyJmCPag6vIK794nMITWiouMdbpp8cwIaopihFoXCcCm4xyG0FYZ1+VT8KfzirlPh+Hhfa/qF3eotslqETJyWAKVUXssmG4XPleR0Rp2lc0XSj5BHUxXJ8VS2aFYbr+DnJEdVEzzZbJIKhUPCb5ncwSZgtFHa7mHWPG29IRdSS01U7pUh8bETReT/FWBX6Z7NmkYb771QyBlXlxezfisJbVt0YIwJDLJVYgJ+Yv6+IpSkIy6hv2Oh7vJSufuvDU/k5lGzDRDK/BMVzP7MDAf6fIlLMljgw4Y1h24Kktz2lWIl+Oi0rPCcmvjhsoI3iJ/FlqPlMiOXc9u9AbhbG06ho/oQX88wrnmP1E3xD64WAbtSUDX4Hrgzg2JqURhbhvisnGL/xHRzva3RC1g2tFfD4vyRfEbWjIqm7OLua3qAc7rvPW/rivNUa7pTDdeQOVryWVRTdm6ocdaFm3AhmDBCJrhL2swX/4Plejf7Y/5EYSMCwpyPPSPUIwJzSyEtt60QItGX2w5WceDVfPg5hQqoOWnjYq8M2IscqTF9WWmRSdStB1bU7KjHzkvm5p28sBYSvp26Y7WOjcOX/lD9+s/bzd0cqUf+kllv70hsoyCh46WxKvg0b6tx22hZFEMdh6ZKu+KPX5qjNifsr3KuptjU7t0F7FiKZwuBfQz8vL0K7G67sxPmxE6kMd/YDSzyXNBz3p8bN1/fm0FfD4jxvAdmpdO1qZ0GzsDCWiy8dcXiAGmrM+9lK39h2QkmH4lA5hJORF964YykNni9lOqCTw3PMIoxeJogulspRIYdWHUyD8zQFF+gjqmkdWKC6E5zI4Ajjy1AqcP81jm8cpLqoVZASScGiIjLJa+uoDP9zGJr9lYRCmTW4z9YLSZGeKSB8TCB7qADAgESooHmBIHjKDKqcdkqmG0OR0OCZvzovzXyfmGG62QZ/qPcIGdIGettXq+1kTg/USf4MTWfa7vKKW315Mh603f/C1Y/2HUK0tcK+WMrNLQiF7+jPQGINOB8yHNgn7tCpOgiKd9hy9MERq3C7V07SQuGXw9sg7tDC+eEeEJpoo5veBDVOc62Gk2yOdcdz3p93xijVlE1sE375xpZAY9gsxBbOoMZgkQVoqcVBjIwthtGgQiforWi07Ue6pRYcgrxTEPER8mRQayWg0WVyM92fkaOJmFkoZR1WVygOUp2hWdLPgvIkwhKm2fuxpI=
+User-Agent: git/1.9.5.msysgit.1
+Host: tfs1.de.abb.com
+Accept-Encoding: gzip
+Content-Type: application/x-git-receive-pack-request
+Accept: application/x-git-receive-pack-result
+Content-Length: 10507259
+
+* SSL read: error:00000000:lib(0):func(0):reason(0), errno 10054
+* Connection died, retrying a fresh connect
+* Closing connection 0
+* Issue another request to this URL: 'https://FIJUVOL@tfs1.de.abb.com/tfs/FIDRI/FI%20GIT/_git/UNICOS_Applications_arpap/git-receive-pack'
+* Couldn't find host tfs1.de.abb.com in the _netrc file; using defaults
+*   Trying 10.51.34.155...
+* Connected to tfs1.de.abb.com (10.51.34.155) port 443 (#1)
+* successfully set certificate verify locations:
+*   CAfile: C:\User\Git/bin/curl-ca-bundle.crt
+  CApath: C:\User\Git\certificates
+* SSL re-using session ID
+* SSL connection using TLSv1.0 / AES128-SHA
+* Server certificate:
+* 	 subject: C=CH; L=Baden; O=ABB Information Systems Ltd.; CN=DE-S-0217227.de.abb.com
+* 	 start date: 2016-12-20 11:48:37 GMT
+* 	 expire date: 2019-06-20 11:58:37 GMT
+* 	 issuer: DC=COM; DC=ABB; O=ABB; CN=ABB Issuing CA 3
+* 	 SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+> POST /tfs/FIDRI/FI%20GIT/_git/UNICOS_Applications_arpap/git-receive-pack HTTP/1.1
+User-Agent: git/1.9.5.msysgit.1
+Host: tfs1.de.abb.com
+Accept-Encoding: gzip
+Content-Type: application/x-git-receive-pack-request
+Accept: application/x-git-receive-pack-result
+Content-Length: 10507259
+
+< HTTP/1.1 401 Unauthorized
+< Content-Type: text/html
+< Server: Microsoft-IIS/7.5
+< X-TFS-ProcessId: 8bb7eb07-12c3-4073-a4e4-3e0ba6fdc249
+< Access-Control-Allow-Origin: *
+< Access-Control-Max-Age: 3600
+< Access-Control-Allow-Methods: OPTIONS,GET,POST,PATCH,PUT,DELETE
+< Access-Control-Expose-Headers: ActivityId,X-TFS-Session,X-MS-ContinuationToken
+< Access-Control-Allow-Headers: authorization
+< X-FRAME-OPTIONS: SAMEORIGIN
+< Set-Cookie: Tfs-SessionId=e2d96b26-9a3b-465e-9cd4-7abb36d00cdd; path=/; secure
+< Set-Cookie: Tfs-SessionActive=2017-01-10 14:47:49Z; path=/; secure
+< WWW-Authenticate: Negotiate
+< WWW-Authenticate: NTLM
+< X-Powered-By: ASP.NET
+< P3P: CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+< X-Content-Type-Options: nosniff
+< Date: Tue, 10 Jan 2017 14:47:49 GMT
+< Content-Length: 1293
+* Rewind stream after send
+* Keep sending data to get tossed away!
+< 
+* Ignoring the response-body
+* SSL_write() returned SYSCALL, errno = 10054
+* Closing connection 1
+trace: exec: 'git-credential-manager' 'erase'
+trace: run_command: 'git-credential-manager' 'erase'
+fatal: The remote end hung up unexpectedly
+error: RPC failed; result=55, HTTP code = 401
+Everything up-to-date
